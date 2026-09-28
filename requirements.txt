@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-community
+langchain-groq
+langchain-text-splitters
+youtube-transcript-api
+rank-bm25

@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-icon">▶</span>
+        <span>Clipwise</span>
+      </a>
+
+      <div class="topbar-right">
+        <span class="status"><span></span> Video ready</span>
+        <button class="clear-button" id="clearChat" type="button">Clear chat</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="video-card">
+          <div class="video-art">
+            <span class="play-icon">▶</span>
+            <span class="video-label">CURRENT VIDEO</span>
+          </div>
+          <div class="video-info">
+            <h2>The Power of Positivity</h2>
+            <p>Ask questions and explore the ideas in this video.</p>
+            <a href="https://youtu.be/W4efXMKy_4Y" target="_blank" rel="noreferrer">
+              Open on YouTube <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-note">
+          <span class="note-icon">✦</span>
+          <p><strong>Ask naturally</strong><br>Ask for a summary, an explanation, or a specific detail from the video.</p>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <div class="chat-heading">
+          <div>
+            <p class="eyebrow">YOUR VIDEO ASSISTANT</p>
+            <h1>Let’s talk about<br><span>this video.</span></h1>
+          </div>
+          <div class="heading-orb">✦</div>
+        </div>
+
+        <div class="chat-scroll" id="chatScroll">
+          <div class="welcome" id="welcome">
+            <div class="assistant-avatar">✦</div>
+            <div>
+              <h2>What would you like to know?</h2>
+              <p>I’ve got the video transcript ready. Ask me anything about it.</p>
+            </div>
+            <div class="suggestions">
+              <button class="suggestion" data-prompt="Can you summarize the video?">✧ Give me a summary</button>
+              <button class="suggestion" data-prompt="What is the main message of the video?">◎ What is the main message?</button>
+              <button class="suggestion" data-prompt="What advice does the video give?">↗ What advice does it give?</button>
+            </div>
+          </div>
+
+          <div id="messages" class="messages"></div>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <textarea
+            id="question"
+            rows="1"
+            placeholder="Ask a question about the video..."
+            aria-label="Your question"
+            required
+          ></textarea>
+          <button class="send-button" type="submit" aria-label="Send question">↑</button>
+          <div class="composer-hint">Enter to send · Shift + Enter for a new line</div>
+        </form>
+      </section>
+    </main>
+
+    <footer>Answers are based on the video transcript.</footer>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode Assistant | Raj Shamani</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">F</span>
+        <span>EPISODE<span class="brand-light"> ASSISTANT</span></span>
+      </a>
+
+      <div class="topbar-right">
+        <span class="episode-status"><span class="status-dot"></span> READY TO CHAT</span>
+        <button class="clear-button" id="clearChat" type="button">Clear chat</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="episode-card">
+          <div class="cover">
+            <div class="cover-lines"></div>
+            <span class="cover-label">FIGURING OUT · FO560</span>
+            <span class="cover-title">BEHIND<br>THE<br>PROTECTION</span>
+            <span class="cover-play">▶</span>
+          </div>
+
+          <div class="episode-info">
+            <p class="section-label">FEATURED EPISODE</p>
+            <h2>Protecting the President</h2>
+            <p class="guest">Major Rishabh Singh Sambyal</p>
+            <p class="host">In conversation with Raj Shamani</p>
+
+            <div class="topic-tags">
+              <span>Special Forces</span>
+              <span>Security</span>
+              <span>Discipline</span>
+            </div>
+
+            <a
+              class="youtube-link"
+              href="https://youtu.be/x63HCoDfAhQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Watch episode on YouTube <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-note">
+          <span class="note-mark">✦</span>
+          <div>
+            <strong>Your episode companion</strong>
+            <p>Ask about the guest’s experiences, the discussion, or key ideas from the transcript.</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <div class="chat-heading">
+          <div>
+            <p class="eyebrow">RAJ SHAMANI · FIGURING OUT</p>
+            <h1>Explore the<br><span>conversation.</span></h1>
+            <p class="heading-description">
+              Ask a question and get an answer grounded in this episode’s transcript.
+            </p>
+          </div>
+          <div class="heading-emblem">FO<span>560</span></div>
+        </div>
+
+        <div class="chat-scroll" id="chatScroll">
+          <div class="welcome" id="welcome">
+            <div class="assistant-avatar">F</div>
+            <div class="welcome-copy">
+              <h2>Where would you like to start?</h2>
+              <p>Choose a question or type your own below.</p>
+            </div>
+
+            <div class="suggestions">
+              <button class="suggestion" data-prompt="What does the episode say about the role of an ADC?">
+                <span>01</span> What does an ADC do?
+              </button>
+              <button class="suggestion" data-prompt="What does Major Rishabh say about discipline and handling fear?">
+                <span>02</span> What does he say about discipline?
+              </button>
+              <button class="suggestion" data-prompt="What parts of the conversation discuss Special Forces selection?">
+                <span>03</span> Ask about Special Forces selection
+              </button>
+            </div>
+          </div>
+
+          <div class="messages" id="messages"></div>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <textarea
+            id="question"
+            rows="1"
+            placeholder="Ask about this episode..."
+            aria-label="Ask a question about the episode"
+            required
+          ></textarea>
+          <button class="send-button" type="submit" aria-label="Send question">↑</button>
+          <div class="composer-hint">Enter to send <span>·</span> Shift + Enter for a new line</div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span class="footer-dot"></span>
+      Answers are based on the video transcript.
+    </footer>
+  </div>
+</body>
+</html>
